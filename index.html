@@ -3,23 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Marella Salvatore</title>
+    <title>Página de Marella</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: #f4f4f9;
+            background-color: #f8f9fa;
             color: #333;
         }
         header {
-            background: #6a1b9a;
+            background-color: #6c63ff;
             color: white;
             padding: 20px;
             text-align: center;
         }
         nav {
-            background: #4527a0;
+            background-color: #4a47a3;
             padding: 10px;
             text-align: center;
         }
@@ -35,20 +35,31 @@
             margin: auto;
         }
         h2 {
-            color: #6a1b9a;
+            color: #4a47a3;
+        }
+        .hobbies {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
         }
         .hobby {
+            width: 30%;
             text-align: center;
-            margin: 40px 0;
         }
         .hobby img {
-            width: 300px;
+            width: 100%;
+            max-height: 180px;
+            object-fit: cover;
             border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
-            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        iframe {
+            border: none;
+            width: 100%;
+            height: 500px;
         }
         footer {
-            background: #6a1b9a;
+            background-color: #6c63ff;
             color: white;
             text-align: center;
             padding: 15px;
@@ -57,53 +68,50 @@
     </style>
 </head>
 <body>
+
     <header>
-        <h1>🌸 Bienvenidos a la página de Marella Salvatore 🌸</h1>
+        <h1>Bienvenidos a mi página personal</h1>
+        <p>Marella Salvatore</p>
     </header>
 
     <nav>
         <a href="#biografia">Biografía</a>
         <a href="#hobbies">Hobbies</a>
+        <a href="#chatbot">Asistente Virtual</a>
     </nav>
 
     <section id="biografia">
         <h2>Biografía</h2>
-        <p>
-            Mi nombre es <strong>Marella Salvatore</strong>, nací en 1988 en la ciudad de Cali. 
-            Soy la mayor de 4 hermanos (3 mujeres y 1 hombre). Estudié instrumentación quirúrgica 
-            en la Universidad Santiago de Cali y me especialicé en mercadeo. 
-            Soy casada y tengo una hija de 10 años. 
-        </p>
-        <p>
-            Vivimos en una casa finca en Santa Marta donde tenemos gallinas ponedoras, patos y una vaca. 
-            También tenemos un huerto de hortalizas y un lago de peces.
-        </p>
+        <p>Mi nombre es Marella Salvatore, nací en 1988 en la ciudad de Cali, soy la mayor de 4 hermanos: 3 mujeres y 1 hombre. Estudié instrumentación quirúrgica en la Universidad Santiago de Cali y me especialicé en mercadeo. Soy casada y tengo una hija de 10 años. Vivimos en una casa finca en Santa Marta donde tenemos gallinas ponedoras, patos y una vaca. También tenemos un huerto de hortalizas y un lago de peces.</p>
     </section>
 
     <section id="hobbies">
         <h2>Mis Hobbies</h2>
-
-        <div class="hobby">
-            <h3>📚 Leer libros</h3>
-            <p>Me gusta leer sobre ocultismo, astrología y medicina tradicional china.</p>
-            <img src="imagenes/leer.jpg.png" alt="Leer libros">
-        </div>
-
-        <div class="hobby">
-            <h3>🏋️‍♀️ Hacer ejercicio</h3>
-            <p>Disfruto entrenar para mantenerme activa y saludable.</p>
-            <img src="imagenes/ejercicio.jpg.png" alt="Hacer ejercicio">
-        </div>
-
-        <div class="hobby">
-            <h3>💃 Bailar salsa</h3>
-            <p>Me encanta bailar salsa, es una parte esencial de mi vida.</p>
-            <img src="imagenes/salsa.jpg.png" alt="Bailar salsa">
+        <div class="hobbies">
+            <div class="hobby">
+                <img src="imagenes/leer.jpg" alt="Leer">
+                <p>Leer libros sobre ocultismo, astrología y medicina tradicional china.</p>
+            </div>
+            <div class="hobby">
+                <img src="imagenes/ejercicio.jpg" alt="Ejercicio">
+                <p>Hacer ejercicio.</p>
+            </div>
+            <div class="hobby">
+                <img src="imagenes/salsa.jpg" alt="Salsa">
+                <p>Bailar salsa.</p>
+            </div>
         </div>
     </section>
 
+    <section id="chatbot">
+        <h2>Asistente Virtual</h2>
+        <p>Puedes hablar con mi asistente aquí:</p>
+        <iframe src="https://copilotstudio.microsoft.com/environments/Default-6ca34ae1-466f-44bc-a7aa-0ac5a78c61b1/bots/cr3a3_agentP32B4G/webchat?__version__=2"></iframe>
+    </section>
+
     <footer>
-        <p>Creado con ❤️ por Marella Salvatore - 2025</p>
+        <p>© 2025 Marella Salvatore - Todos los derechos reservados</p>
     </footer>
+
 </body>
 </html>
